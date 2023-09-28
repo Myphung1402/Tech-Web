@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        Import CSS -->
+        <link rel="stylesheet" href="./signup.css">
+    <title>Tech Life</title>
+</head>
+<body>
+	<div class="body1">
+        <h2 id="title1">SIGN UP HERE</h2>
+            <input type="text" placeholder="FULL NAME" id="icon2" class="input1" onchange="onChangeFullname(event.target.value)">
+            <input type="email" placeholder="EMAIL" id="icon3" class="input1" onchange="onChangeEmail(event.target.value)">
+			<input type="text" placeholder="USERNAME" id="icon2" class="input1" onchange="onChangeUsername(event.target.value)">
+            <input type="password"  placeholder="PASSWORD" class="input1" id="icon1" onchange="onChangePassword(event.target.value)">
+            <input type="password"  placeholder="RE PASSWORD" class="input1" id="icon1" onchange="onChangeRePassword(event.target.value)">
+			<ul class="">
+				<li>
+					<input type="checkbox" class="checkbox1">
+					<label for="" id="abc1"><span></span>I Accept Terms & Conditions</label>
+				</li>
+			</ul>
+			<div class="">
+				<button class="input2" onclick="signup()">SIGN UP</button>
+				<p id="abc2" class="text1"> Already have an account  <span>→</span> <a id="ad1" href="./signin.html"> Click
+						Here</a></p>
+				<div class="clear"></div>
+			</div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script src="./signup.js"></script>
+</body>
+</html>
